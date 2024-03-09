@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/jpg" href="images/prabmelet.jpg"> <!-- icon di tab -->
+    <title>Document</title> <!-- judul, ada di tab --> 
+</head>
+<body>
+    <!-- text tipe header, terbesar ke terkecil -->
+        <h1>This is a header</h1>
+        <h2>This is a header</h2>
+        <h3>This is a header</h3>
+        <h4>This is a header</h4>
+        <h5>This is a header</h5>
+        <h6>This is a header</h6>
+
+    <p> <!-- paragraph, buat text biasa -->
+        This is a paragraph
+    </p> <!-- setiap closing otomatis pake <br>-->
+
+    <pre> <!-- preformatted, text bakal exactly sama kyk di code -->
+    This
+    is
+    a
+    preformatted
+    text
+    </pre>
+
+    <br> <!-- line break -->
+    <hr> <!-- horizontal line -->
+
+    <!-- formatting -->
+        <b>BOLD</b> <br>
+        <i>italic</i> <br>
+        <u>underline</u> <br>
+        <s>strikethrough</s> <br>
+        <del>deleted</del> <br>
+        <big>big</big> <br> <br>
+        <small>small</small> <br>
+        <tt>monospaced</tt> <br>
+        <mark style="background-color: lightgreen">highlight</mark> <br>
+        <sub>subscript</sub> <br><!-- pangkat bwh -->
+        <sup>superscript</sup> <br><!-- pangkat atas -->
+
+        <hr>
+
+    <!-- hyperlink, a = anchor -->
+        <a href="https://www.youtube.com/watch?v=jwYRwOj9RdA" target="_blank" title="kehancuran indonesia">oke gas oke gas</a>
+        <!-- link(wajib http), _blank buat ke new tab, title kalo hover bakal muncul, terakhir text yang bakal ke print di website -->
+        <br>
+        <a href="mailto:woi@gaje.com">Mail me</a>
+        <!-- mailto: buat langsung buka email -->
+        <a href="tel:08123456789">Call me</a>
+
+
+    <!-- marquee (moving txt) -->
+    <!-- behaviour: scroll, slide, alternate -->
+    <!-- direction: left, right, up, down -->
+    <!-- scrollamount: speed -->
+        <marquee behavior="scroll" direction="right" scrollamount="30">rickwantot</marquee>
+        <marquee behavior="slide" direction="right" scrollamount="30">rickwantot</marquee>
+        <marquee behavior="alternate" direction="right" scrollamount="30">rickwantot</marquee>
+
+        <hr>
+
+    <!-- container = box utk grouping -->
+        <h1><span style="background-color: aquamarine;">This is a span title</span></h1>
+        <h1><div style="background-color: tomato;">This is a div title</div></h1>
+        <!-- div block level container, dia pake semua widthnya -->
+        <!-- span inline container, dia pake width sesuai textnya -->
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, dolor. <span style="background-color: blueviolet;">Reiciendis a aut repellat numquam, distinctio unde assumenda voluptate ipsum omnis praesentium! Laborum quisquam pariatur, dolor possimus eligendi voluptates corrupti!</span></p>
+
+        <hr>
+
+    <!-- semantic tag = container yg dipake spesifik buat jelasin -->
+        <header></header> <!-- Contains introductory content or navigation links -->
+        <nav></nav> <!--  Defines a set of navigation links. -->
+        <footer></footer> <!-- Contains the footer for a document or section. -->
+        <section></section> <!-- Defines a section in a document. -->
+        <article></article> <!-- Specifies independent, self-contained content.-->
+
+
+    <!-- LISTS-->
+        <ul> <!-- unordered list -->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <ul>
+                <li>item 3.1</li>
+                <li>item 3.2</li>
+                <li>item 3.3</li>
+            </ul>
+        </ul>
+
+        <ol> <!-- ordered list -->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+
+        <dl style="background-color: cadetblue; border: 2px solid; "> <!-- description list -->
+            <dt>item 1</dt> <!-- definition term -->
+            <dd>description 1</dd> <!-- definition description -->
+            <dt>item 2</dt>
+            <dd>description 2</dd>
+            <dt>item 3</dt>
+            <dd>description 3</dd>
+        </dl>
+
+        <hr>
+
+    <!-- INCLUDE -->
+        <!-- include an image, bisa gif jg -->
+        <!-- <img src="images/download.jpg" alt="SORRRYYY YEEEEE" width="500" height="500"> -->
+        <!-- src: harus sejajar naro filenya, kalo g bikin kyk explorer aja, alt: kalo gambar ga muncul text ini bakal. height & width: set salah satu aja nanti yg laen nyesuain. -->
+
+        <!-- include a video with a picture -->
+        <!-- <a href="https://www.youtube.com/watch?v=colz5b0ZiQA" target="_blank" title="Master Mister Vincent Kepala Dua"><img src="images/Untitled.jpg" alt="PAK VINCENT SATU AJA PAKKKK" height="500"></a> -->
+
+        <!-- include a video (iframe) -->
+        <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/0I1xgG32Zdg" title="Akhiri Pidato, Prabowo Berjoget Goyang Gemoy | Pemilu 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <!-- gampangnya copy embed code aja -->
+
+        <!-- include an audio -->
+        <!-- <audio controls loop src="audio/daksistem.mp3"></audio> -->
+        <!-- autoplay, loop, muted, -->
+
+        <!-- include a video -->
+        <!-- <video controls loop muted width="480">
+            <source src="video/mumuchang.mp4" type="video/mp4">
+            <source src="video/mumuchang.webm" type="video/webm">
+        </video> -->
+
+    <!-- TABLE -->
+        <h3>Store Hours</h3>
+
+        <table border="2" style="background-color: black;"> <!-- border: ketebalan garis -->
+            <tr align="center" style="background-color: aquamarine;"> <!-- table row -->
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr align="center" style="background-color:cornflowerblue">
+                <td>Closed</td>
+                <td>9 - 5</td>
+                <td>9 - 5</td>
+                <td>9 - 5</td>
+                <td>9 - 5</td>
+                <td>9 - 5</td>
+                <td>10 - 2</td>
+            </tr>
+        </table>
+
+        <hr>
+
+    <!-- BUTTONS -->
+    <a href="https://www.youtube.com/watch?v=HU8evYGrutE" target="_blank">
+        <button style="font-size: 70px; background-color: blueviolet; color: burlywood; border-radius: 25px;">PENCET GUA</button>
+    </a>
+
+    <a href="p.html" target="_blank">
+        <button style="font-size: 70px; background-color: blueviolet; color: burlywood; border-radius: 25px;">PENCET GUA JUGA</button>
+    </a>
+
+    <button onclick="LALALA()" style="font-size: 70px; background-color: blueviolet; color: burlywood; border-radius: 25px;">JANGAN PENCET GUA</button>
+
+    <p id="burntheirgrave">Hello</p>
+
+    <script> <!-- javascript -->
+        function LALALA(){
+            document.getElementById("burntheirgrave").innerHTML = "LALALALA LALALALA ELMO'S WORLD";
+            alert("LALALALA LALALALA ELMO'S WORLD");
+        }
+
+    </script>
+
+    <hr>
+
+</body>
+</html>
