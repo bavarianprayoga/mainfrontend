@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="images/jpg" href="images/prabmelet.jpg"> <!-- icon di tab -->
     <title>Document</title> <!-- judul, ada di tab --> 
+    <link rel="stylesheet" href="styletut.css">
 </head>
 <body>
     <!-- text tipe header, terbesar ke terkecil -->
@@ -177,10 +178,80 @@
             document.getElementById("burntheirgrave").innerHTML = "LALALALA LALALALA ELMO'S WORLD";
             alert("LALALALA LALALALA ELMO'S WORLD");
         }
-
     </script>
 
     <hr>
+
+    <!-- FORM -->
+
+        <form action="index.php" method="post" enctype="multipart/form-data"> <!--action buat ngirim data ke suatu file (ex. index.php), method: get(insensitive) or post(sensitive)-->
+
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="Input your username..." minlength="6" maxlength="18" required>
+
+            <br><label for="password">password:</label>
+            <input type="password" id="password" placeholder="Input your password..." minlength="8" required>
+
+            <br><label for="email">email:</label>
+            <input type="email" id="email" placeholder="Input your email..." required>
+
+            <br><label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="628XXXXXXXXX" pattern="[628][0-9]{9|10}" required>
+
+            <br><label for="bday">birthdate:</label>
+            <input type="date" id="bday" required>
+
+            <br><label for="quantity">quantity</label>
+            <input type="number" id="quantity" min="0" max="99" value="1">
+
+            <br><label for="title">title:</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+            <label for="Dr.">Dr.</label>
+            <input type="radio" id="Dr." value="Dr." name="title">
+
+            <br><label for="payment">payment:</label>
+            <select name="payment" id="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="giftcard">Giftcard</option>
+            </select>
+
+            <br><label for="subsribe">subscribe:</label>
+            <input type="checkbox" id="subscribe">
+            
+            <br><label for="comment">comment:</label>
+            <textarea name="comment" id="comment" cols="50" rows="6"></textarea>
+
+            <br><label for="file">file:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg">
+
+            <br><input type="reset">
+            <br><input type="submit">
+
+        </form>
+
+    <hr>
+
+    <!-- HEADER AND FOOTER (harusnya ditaro diawal & akhir)-->
+        <header style="background-color: cornflowerblue;">
+            <h1>Welcum</h1>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Product</a>
+        </header>
+
+        <!-- <main></main> -->
+
+        <footer style="background-color:deeppink">
+            author: bap <br>
+            &copy; 2077 <br>
+            <small><a href="mailto:prabowosubianto@wowo.com">prabowosubianto@wowo.com</a></small>
+        </footer>
+
 
 </body>
 </html>
